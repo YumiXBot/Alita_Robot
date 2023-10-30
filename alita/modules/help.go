@@ -112,12 +112,6 @@ var (
 					CallbackData: "helpq.Help",
 				},
 			},
-			{
-				{
-					Text:         "Lᴀɴɢᴜᴀɢᴇ",
-					CallbackData: "helpq.Languages",
-				},
-			},
 		},
 	}
 )
