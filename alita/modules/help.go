@@ -27,13 +27,13 @@ var HelpModule = moduleStruct{
 }
 
 const (
-	aboutText = "Info & About\n\nHere are some of the FAQs about Alita."
-	startHelp = "Hey there! My name is Alita ✨.\n" +
+	aboutText = "Info & About\n\nHere are some of the FAQs about Alone."
+	startHelp = "Hey there! My name is Alone ✨.\n" +
 		"I'm here to help you manage your groups!\n" +
 		"Hit /help to find out more about how to use me to my full potential.\n" +
-		"Join my <a href='https://t.me/AlitaRobotUpdates'>News Channel</a> to get information on all the latest updates."
+		"Join my <a href='https://t.me/AloneXBots'>Updates Channel</a> to get information on all the latest updates."
 	mainhlp = "Hey %s!\n" +
-		"My name is Alita ✨.\n\n" +
+		"My name is Alone ✨.\n\n" +
 		"I am a group management bot, here to help you get around and keep the order in your groups!\n" +
 		"I have lots of handy features, such as flood control, a warning system, a note keeping system, " +
 		"and even predetermined replies on certain keywords.\n\n" +
@@ -59,23 +59,23 @@ var (
 		InlineKeyboard: [][]gotgbot.InlineKeyboardButton{
 			{
 				{
-					Text:         "About me 👨\u200d💻",
-					CallbackData: "about.me",
+					Text: "Dᴇᴠᴏʟᴏᴘᴇʀ",
+					Url:  "https://t.me/ALONE_WAS_BOT",
 				},
 			},
 			{
 				{
-					Text: "News Channel 📢",
-					Url:  "https://t.me/AlitaRobotUpdates",
+					Text: "Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ",
+					Url:  "https://t.me/Alone",
 				},
 				{
-					Text: "Support Group 👥",
-					Url:  "https://t.me/DivideSupport",
+					Text: "Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ",
+					Url:  "https://t.me/AlonesHeaven",
 				},
 			},
 			{
 				{
-					Text:         "Configuration ⚙️",
+					Text:         "Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴon ⚙️",
 					CallbackData: "configuration.step1",
 				},
 			},
@@ -92,29 +92,29 @@ var (
 		InlineKeyboard: [][]gotgbot.InlineKeyboardButton{
 			{
 				{
-					Text:         "About ✨",
-					CallbackData: "about.main",
+					Text: "Aᴅᴅ Mᴇ Tᴏ Cʜᴀᴛ",
+					Url:  "https://t.me/AloneXRobot?startgroup=botstart",
 				},
 			},
 			{
 				{
-					Text: "➕ Add me to chat!",
-					Url:  "https://t.me/Alita_Robot?startgroup=botstart",
+					Text: "Dᴇᴠᴏʟᴏᴘᴇʀ",
+					Url:  "https://t.me/ALONE_WAS_BOT",
 				},
 				{
-					Text: "Support Group 👥",
-					Url:  "https://t.me/DivideSupport",
+					Text: "Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ",
+					Url:  "https://t.me/AlonesHeaven",
 				},
 			},
 			{
 				{
-					Text:         "📚 Commands & Help",
+					Text:         "Cᴏᴍᴍᴀɴᴅs & Hᴇʟᴘ",
 					CallbackData: "helpq.Help",
 				},
 			},
 			{
 				{
-					Text:         "Language 🌏",
+					Text:         "Lᴀɴɢᴜᴀɢᴇ",
 					CallbackData: "helpq.Languages",
 				},
 			},
@@ -373,7 +373,7 @@ func (moduleStruct) botConfig(b *gotgbot.Bot, ctx *ext.Context) error {
 		iKeyboard = [][]gotgbot.InlineKeyboardButton{
 			{
 				{
-					Text: "➕ Add Alita to chat!",
+					Text: "➕ Add Alone to chat!",
 					Url:  fmt.Sprintf("https://t.me/%s?startgroup=botstart", b.Username),
 				},
 			},
